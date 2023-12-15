@@ -7,6 +7,7 @@ A basic To-Do List web application built with HTML, CSS, and JavaScript!
 To open the list, open the index.html file in your preferred browser.
 Once opened, you can add a task by typing its name into the text box, then either clicking the "Add" button or press Enter.
 Note: you will not be able to add a task to the list unless you have provided a task name.
+
 ![Adding to list demo](readmeAssets/addToListDemo.gif)
 
 Once you've added the tasks you want to the list, you can then mark them as completed by clicking on the task.
