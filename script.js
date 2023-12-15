@@ -1,5 +1,9 @@
+// Input box gets the entered task from the user
 const inputBox = document.getElementById("input-box");
+
+// List container holds the list elements added by the user
 const listContainer = document.getElementById("list-container");
+
 
 function addTask(){
     if(inputBox.value === ''){
@@ -15,11 +19,14 @@ function addTask(){
         li.appendChild(span);
     }
 
+    // Clear inputbox of user supplied text
     inputBox.value = "";
 
     storeListData();
 }
 
+// Mark task completed when task li item is clicked, and remove 
+// it when the "X" span tag is clicked
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
@@ -31,6 +38,7 @@ listContainer.addEventListener("click", function(e){
     }
 }, false);
 
+// Add task to list by pressing enter
 inputBox.addEventListener("keyup", function(e) {
     if (e.key === 'Enter') {
       e.preventDefault();
@@ -46,4 +54,5 @@ function retrieveListData(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
 
+// Get list state on page load
 retrieveListData();
