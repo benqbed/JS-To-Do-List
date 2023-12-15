@@ -1,8 +1,8 @@
-#To-Do List
+# To-Do List
 
 A basic To-Do List web application built with HTML, CSS, and JavaScript!
 
-##Use
+## Use
 
 To open the list, open the index.html file in your preferred browser.
 Once opened, you can add a task by typing its name into the text box, then either clicking the "Add" button or press Enter.
